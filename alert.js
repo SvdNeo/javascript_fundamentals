@@ -4,3 +4,7 @@ let admin;
 name = "John";
 admin = name;
 alert(admin);
+const ourPlanetName = "Earth";
+alert(ourPlanetName);
+var currentUserName= "Sanjay";
+alert(currentUserName);
