@@ -8,3 +8,5 @@ const ourPlanetName = "Earth";
 alert(ourPlanetName);
 var currentUserName= "Sanjay";
 alert(currentUserName);
+const BIRTHDAY = "27.10.2022"; 
+const age = someCode(BIRTHDAY);
