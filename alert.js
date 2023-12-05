@@ -25,3 +25,5 @@ alert(`My  full name is ${fullName}`)
 let isLunch = confirm("Had Your lunch?");
 
 alert( isLunch ); 
+
+// 0, null, undefined, NaN, ""	 are all false
