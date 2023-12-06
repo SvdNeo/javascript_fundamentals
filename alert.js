@@ -121,5 +121,11 @@ alert( alert(1) && alert(2) );// returns 1 and undefined
 alert( null || 2 && 3 || 4 ); // returns 3 as first 2&& 3 is evaluated and returns 3 later its resolved to null||3||4 hence it returns 3
 //Write an if condition to check that age is between 14 and 90 inclusively.
 if(age>=14 && age<=90);
+//Write an if condition to check that age is NOT between 14 and 90 inclusively.Create two variants: the first one using NOT !, the second one – without it.
+if(!(age>=14 && age<=90));
+if(age<14 || age>90);
 
+if (-1 || 0) alert( 'first' );// it runs as -1 is truthy 
+if (-1 && 0) alert( 'second' );// it doesnt run , as && opeartor returns false value
+if (null || -1 && 1) alert( 'third' );// it runs as if statement returns 1 which is a truthy value
  
