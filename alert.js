@@ -129,3 +129,4 @@ if (-1 || 0) alert( 'first' );// it runs as -1 is truthy
 if (-1 && 0) alert( 'second' );// it doesnt run , as && opeartor returns false value
 if (null || -1 && 1) alert( 'third' );// it runs as if statement returns 1 which is a truthy value
  
+
