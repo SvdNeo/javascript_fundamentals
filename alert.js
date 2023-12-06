@@ -84,4 +84,16 @@ let question = prompt("What is the “official” name of JavaScript?","");
 let number = +prompt("Enter a number");
  let output = (number >0) ? 1 :(number<0) ? -1 :0;
  alert(output);
+
+ //Rewrite 'if' into '?'
+ let res;
+
+if (a + b < 4) {
+  res = 'Below';
+} else {
+  res= 'Over';
+}
+
+ let result = (a + b < 4) ? "below" : "over"; // using ternary operator
+
  
