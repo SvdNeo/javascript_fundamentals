@@ -96,4 +96,23 @@ if (a + b < 4) {
 
  let result = (a + b < 4) ? "below" : "over"; // using ternary operator
 
+ //Rewrite 'if..else' into '?'
+ let message;
+
+if (login == 'Employee') {
+  message = 'Hello';
+} else if (login == 'Director') {
+  message = 'Greetings';
+} else if (login == '') {
+  message = 'No login';
+} else {
+  message = '';
+}
+
+let mess = (login == 'Employee') ?  'Hello' : (login == 'Director') ? "Greetings" : (login == '') ? "No login" :"";
+
+alert( null || 2 || undefined );// returns 2 as OR operator returns first truthy value
+alert( alert(1) || 2 || alert(3) );// returns 1 and then 2 i.e alert(1) pops out 1 but alert(alert(1)) is undefined hence it moves forward and returns 2 as its truthy value
+alert(alert(1));// returns 1 and then undefined
+
  
