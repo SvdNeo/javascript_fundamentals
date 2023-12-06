@@ -111,8 +111,15 @@ if (login == 'Employee') {
 
 let mess = (login == 'Employee') ?  'Hello' : (login == 'Director') ? "Greetings" : (login == '') ? "No login" :"";
 
+//Logical operators
+
 alert( null || 2 || undefined );// returns 2 as OR operator returns first truthy value
 alert( alert(1) || 2 || alert(3) );// returns 1 and then 2 i.e alert(1) pops out 1 but alert(alert(1)) is undefined hence it moves forward and returns 2 as its truthy value
 alert(alert(1));// returns 1 and then undefined
+alert( 1 && null && 2 );// returns null as AND looks for first falsy value
+alert( alert(1) && alert(2) );// returns 1 and undefined 
+alert( null || 2 && 3 || 4 ); // returns 3 as first 2&& 3 is evaluated and returns 3 later its resolved to null||3||4 hence it returns 3
+//Write an if condition to check that age is between 14 and 90 inclusively.
+if(age>=14 && age<=90);
 
  
