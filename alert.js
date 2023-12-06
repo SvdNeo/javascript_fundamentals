@@ -81,5 +81,7 @@ if (0) {
 let question = prompt("What is the “official” name of JavaScript?","");
  (question == "ECMAScript") ?  alert("Right!"): alert("You don’t know? ECMAScript!");
 
-
+let number = +prompt("Enter a number");
+ let output = (number >0) ? 1 :(number<0) ? -1 :0;
+ alert(output);
  
