@@ -57,3 +57,8 @@ console.log("  -9  " - 5); // -14
 console.log(null + 1); // 1
 console.log(undefined + 1); // NaN
 console.log(" \t \n" - 2); //-2
+
+//Fix the addition
+let m = +prompt("First number?",1);
+let n = +prompt("Second number?",2);
+alert(m+n);
