@@ -71,3 +71,15 @@ console.log(undefined == null); // true
 console.log(undefined === null); //false
 console.log(null == "\n0\n"); //false
 console.log(null === +"\n0\n")//false
+
+// conditional branching 
+if (0) {
+    console.log( 'Hello' );
+  }
+  // hello will be logged as it is a string not a number
+
+let question = prompt("What is the “official” name of JavaScript?","");
+ (question == "ECMAScript") ?  alert("Right!"): alert("You don’t know? ECMAScript!");
+
+
+ 
