@@ -58,24 +58,36 @@
 //     (c++);
 //   }
 
-let number;
-do{
-    number = prompt("Enter a number greater than zero")
-} while(number<=100 && number)
+// let number;
+// do{
+//     number = prompt("Enter a number greater than zero")
+// } while(number<=100 && number)
 
-let n = 10;
+// let n = 10;
 
-for (let i = 2; i <= n; i++) {
-    let isPrime = true; // flag to check if i is prime
+// for (let i = 2; i <= n; i++) {
+//     let isPrime = true; // flag to check if i is prime
 
-    for (let j = 2; j < i; j++) {
-        if (i % j === 0) {
-            isPrime = false;
-            break; // not a prime, break out of the inner loop
-        }
-    }
+//     for (let j = 2; j < i; j++) {
+//         if (i % j === 0) {
+//             isPrime = false;
+//             break; // not a prime, break out of the inner loop
+//         }
+//     }
 
-    if (isPrime) {
-        console.log(i); // a prime
-    }
+//     if (isPrime) {
+//         console.log(i); // a prime
+//     }
+// }
+
+// converting switch to if-else statement
+let browser = prompt("Enter the browser name")
+if(browser == "edge"){
+    alert( "You've got the Edge!" );
+}
+else if (browser == "chrome" || browser == "Firefox" || browser =="Safari"){
+    alert( 'Okay we support these browsers too' );
+}
+else{
+    alert( 'We hope that this page looks ok!' );
 }
