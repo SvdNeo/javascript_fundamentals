@@ -94,27 +94,37 @@
 // }
 
 //converting   if-else to switch statement
-let a = +prompt('a?', '');
+// let a = +prompt('a?', '');
 
-switch(a){
-    case 0:alert( 0 );
-    break;
-    case 1:alert( 1 );
-    break;
-    case 2 : case 3:alert( '2,3' );
-    break;
-    default:alert("Sorry")
+// switch(a){
+//     case 0:alert( 0 );
+//     break;
+//     case 1:alert( 1 );
+//     break;
+//     case 2 : case 3:alert( '2,3' );
+//     break;
+//     default:alert("Sorry")
+// }
+
+// let checkAged = age>18 ? true: confirm('Did parents allow you?');
+// function checkAge(){
+//     return (age>18) ? true: confirm('Did parents allow you?');
+// }
+
+// function min(d,f){
+//     if(d<f){
+//         return d
+//     }
+//     return f
+//     }
+// const minimum = (k,l) =>{if(k<l){return k}return l}
+
+const p = prompt("Enter first number");
+const h = prompt("Enter second number");
+
+if (!isNaN(p) && !isNaN(h)) {
+    const result = Math.pow(p,h);
+    alert(`Result: ${p}^${h} = ${result}`);
+} else {
+    alert('Please enter valid numbers for base and exponent.');
 }
-
-let checkAged = age>18 ? true: confirm('Did parents allow you?');
-function checkAge(){
-    return (age>18) ? true: confirm('Did parents allow you?');
-}
-
-function min(d,f){
-    if(d<f){
-        return d
-    }
-    return f
-    }
-const minimum = (k,l) =>{if(k<l){return k}return l}
