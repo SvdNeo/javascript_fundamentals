@@ -51,9 +51,15 @@
 //   }
 
   // rewrite this by using while loop
-  let c= 0;
-  while (c<3){
+//   let c= 0;
+//   while (c<3){
     
-    alert( `number ${c}!` );
-    (c++);
-  }
+//     alert( `number ${c}!` );
+//     (c++);
+//   }
+
+let number;
+do{
+    number = prompt("Enter a number greater than zero")
+} while(number<=100 && number)
+
