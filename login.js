@@ -105,3 +105,8 @@ switch(a){
     break;
     default:alert("Sorry")
 }
+
+let checkAged = age>18 ? true: confirm('Did parents allow you?');
+function checkAge(){
+    return (age>18) ? true: confirm('Did parents allow you?');
+}
