@@ -63,3 +63,19 @@ do{
     number = prompt("Enter a number greater than zero")
 } while(number<=100 && number)
 
+let n = 10;
+
+for (let i = 2; i <= n; i++) {
+    let isPrime = true; // flag to check if i is prime
+
+    for (let j = 2; j < i; j++) {
+        if (i % j === 0) {
+            isPrime = false;
+            break; // not a prime, break out of the inner loop
+        }
+    }
+
+    if (isPrime) {
+        console.log(i); // a prime
+    }
+}
