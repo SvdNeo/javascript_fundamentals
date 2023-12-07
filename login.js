@@ -110,3 +110,11 @@ let checkAged = age>18 ? true: confirm('Did parents allow you?');
 function checkAge(){
     return (age>18) ? true: confirm('Did parents allow you?');
 }
+
+function min(d,f){
+    if(d<f){
+        return d
+    }
+    return f
+    }
+const minimum = (k,l) =>{if(k<l){return k}return l}
