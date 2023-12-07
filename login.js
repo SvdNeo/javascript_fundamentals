@@ -119,12 +119,23 @@
 //     }
 // const minimum = (k,l) =>{if(k<l){return k}return l}
 
-const p = prompt("Enter first number");
-const h = prompt("Enter second number");
+// const p = prompt("Enter first number");
+// const h = prompt("Enter second number");
 
-if (!isNaN(p) && !isNaN(h)) {
-    const result = Math.pow(p,h);
-    alert(`Result: ${p}^${h} = ${result}`);
-} else {
-    alert('Please enter valid numbers for base and exponent.');
+// if (!isNaN(p) && !isNaN(h)) {
+//     const result = Math.pow(p,h);
+//     alert(`Result: ${p}^${h} = ${result}`);
+// } else {
+//     alert('Please enter valid numbers for base and exponent.');
+// }
+
+// use of callback function
+const func = ()=>{console.log("i have to complete learning JS")}
+setTimeout(func,5000);// here setTimeout takes 2 parameters i.e a function and time after which it should be executed
+
+const handleSubmit = ()=>{
+    let message = document.createElement("div")
+    message.innerText = "Submitted";
+    document.body.appendChild(message)
 }
+document.getElementById("submit").addEventListener("click",handleSubmit);
