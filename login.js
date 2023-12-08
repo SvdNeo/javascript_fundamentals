@@ -119,15 +119,23 @@
 //     }
 // const minimum = (k,l) =>{if(k<l){return k}return l}
 
-// const p = prompt("Enter first number");
-// const h = prompt("Enter second number");
+const p = prompt("Enter first number");
+const h = prompt("Enter second number");
 
-// if (!isNaN(p) && !isNaN(h)) {
-//     const result = Math.pow(p,h);
-//     alert(`Result: ${p}^${h} = ${result}`);
-// } else {
-//     alert('Please enter valid numbers for base and exponent.');
-// }
+function pow(p,h){
+  let res = p;
+  for(let i=1;i<h;i++){
+    res=res*p
+  }
+  return res
+}
+alert(pow(p,h));
+if (!isNaN(p) && !isNaN(h)) {
+    const result = Math.pow(p,h);
+    alert(`Result: ${p}^${h} = ${result}`);
+} else {
+    alert('Please enter valid numbers for base and exponent.');
+}
 
 // use of callback function
 const func = ()=>{console.log("i have to complete learning JS")}
